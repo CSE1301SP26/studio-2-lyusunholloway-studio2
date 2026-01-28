@@ -9,7 +9,7 @@ public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
     System.out.println("What are you starting with? ");
     int startAmount = scan.nextInt();
-    System.out.print("Enter the odds of winning: ");
+    System.out.println("Enter the odds of winning: ");
     double winOdds = scan.nextDouble();
     System.out.println("Enter a win limit: ");
     int winLimit = scan.nextInt();
@@ -21,7 +21,7 @@ public static void main(String[] args) {
     int numWins = 0;
     int numRuins = 0;
 
-    // for (int i = 0; i == numSimulations; i ++){
+    for (int i = 0; i < numSimulations; i++){
 
         while (wonMoney < winLimit && totalMoney > 0){
 
@@ -47,10 +47,10 @@ public static void main(String[] args) {
             System.out.println("ruin");
             numRuins++;
         }
-//}
+}
 
-    // System.out.println("You won " + numWins + " times!");
-    // System.out.println("You lost " + numRuins + " times!");
+    System.out.println("You won " + numWins + " times!");
+    System.out.println("You lost " + numRuins + " times!");
 
 }
 
